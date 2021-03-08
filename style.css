@@ -1,0 +1,279 @@
+:root{
+  --primary-color: hsl(176, 50%, 47%);
+  --secondary-color: hsl(176, 72%, 28%);
+  --Dark-gray: hsl(0, 0%, 48%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+html{
+  font-size: 16px;
+  font-family:"Commission", "Roboto", Sans-Serif ;
+}
+body{
+  background: #fff;
+}
+header{
+  background-image:url(/images/image-hero-desktop.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 20rem;
+  display: block;
+}
+nav{
+  padding:4rem;
+  display: block;
+}
+nav ul.navbar-nav{
+  margin-left: 25rem;
+
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+button.navbar-toggler{
+  color: #fff;
+  border: none;
+}
+button .navbar-toggler-icon:hover,
+button .navbar-toggler-icon:focus{
+  border:none;
+  outline: none;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.wrapper{
+  position: relative;
+  top: -3.5rem;
+  z-index: 999;
+}
+.card-wrapper{
+  border: none;
+  padding: 1rem .5rem;
+  margin: 1rem;
+  box-shadow: 0 1px 1rem rgba(0,0,0,.1);
+}
+.card{
+  padding: 1rem .2rem;
+  margin: .8rem;
+}
+
+.svg1{
+  display: block;
+  margin: auto;
+  position: relative;
+  top: -2.3rem;
+}
+.card-title{
+  padding: 1rem;
+  text-align: center;
+}
+.card-title h1{
+  font-weight: bolder;
+  font-size: 30px;
+}
+.card-title p,
+.card-body p,
+.small{
+  color: #a1a1a1;
+  font-size: 1rem;
+}
+.btn-green{
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: .6rem;
+  transition: background 650ms;
+}
+.btn-green:hover{
+  border: none;
+  background: var(--secondary-color);
+}
+.btn-grey{
+  background: #b1b1b1;
+  background: rgba(0,0,0,.1);
+  color: #000;
+  height: 50px;
+  padding-left:2rem;
+  border-radius: 1.5rem;
+  transition: background 650ms;
+
+}
+.btn-gey:hover{
+  background: var(--Dark-gray);
+}
+
+.svg-grey{
+  position: relative;
+  right: -35px;
+}
+.line{
+  background: #a1a1a1;
+  background:rgba(0,0,0,.3);
+  color: #a1a1a1;
+  width: 5px;
+  height:5rem ;
+}
+.progress{
+  height: .4rem;
+  width: 90%;
+  margin: auto;
+}
+.progress-bar{
+  background-color: var(--primary-color);
+}
+.justify{
+  text-align: justify;
+}
+
+h2.left{
+  float: left;
+  font-size: 1.5rem;
+}
+.card-title a{
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  float: right;
+}
+.btn-right{
+  float: right;
+}
+h2.grey,
+h5.grey{
+  color: rgba(0,0,0,.5);
+}
+/* Modal styles */
+button.close{
+  font-size:2rem;
+  color: #a1a1a1;
+}
+a.green{
+  color: var(--primary-color);
+  font-size: 14px;
+}
+p.modal-p{
+  color: #a1a1a1;
+  font-size: 12px;
+  text-align: left;
+}
+.modal-h2{
+  float: right;
+  font-size: 1rem;
+}
+input.radio-btn{
+  background:var(--primary-color);
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+.form-group{
+  display: flex;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 1.5rem;
+  width: 100%
+}
+.form-group:hover,
+.card:hover{
+  border: 1px solid var(--primary-color);
+}
+label{
+    padding: .5rem;
+}
+
+input.modal-input{
+  border: none;
+  color: #000;
+  font-weight: bolder;
+  width: 50%;
+}
+input.modal-input:hover{
+  border: none;
+  outline: none;
+}
+
+.modal-h5{
+  font-size: 1rem;
+}
+.completed-h1{
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.completed-p{
+  font-size: 1rem;
+  color: #a1a1a1;
+}
+.btn-completed{
+  width: 50%;
+}
+input[type='radio']{
+  color: var(--primary-color);
+}
+input[type='radio']:checked{
+  background: var(--primary-color);
+  border: none;
+}
+.selected-w{
+  visibility: collapse;
+}
+/* responsive */
+@media only screen and (max-width: 680px){
+    header{
+      background-image:url(/images/image-hero-mobile.jpg);
+    }
+    nav{
+      padding: 0;
+    }
+    .float{
+      inherit: none;
+    }
+    .btn-green{
+      font-size: .9rem;
+    }
+    .btn-bookmark{
+      display: none;
+    }
+    .svg-grey{
+      position: static;
+      right: 0;
+   }
+    .bookmarkWrapper{
+      width: 100%;
+      display: block;
+    }
+    .card-title h2,
+    h2.left{
+      float: none;
+      display: block;
+      font-size: 1.2rem;
+      text-align: left;
+    }
+    .card-title a{
+      font-size: 14px;
+      float: none;
+      text-align: left;
+      display: block;
+    }
+    .btn-right{
+      float: none;
+      margin: .5rem 0;
+    }
+    .modal-h2{
+      float: none;
+    }
+    .btn-col,
+    .form-col{
+      width: 50%;
+      display: inline;
+    }
+    .form-group{
+      width: 70%;
+    }
+  }
+
+/* responsive ends here*/
